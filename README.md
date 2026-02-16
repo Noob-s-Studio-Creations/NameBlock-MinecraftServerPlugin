@@ -1,2 +1,1 @@
-# UserBlock-MCServerPlugin
-
+# **UserBlock-Minecraft Server Plugin**
