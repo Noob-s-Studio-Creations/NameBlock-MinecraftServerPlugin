@@ -6,8 +6,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import net.kyori.adventure.text.format.NamedTextColor;
 
 import java.util.List;
 import java.util.UUID;
@@ -26,7 +28,9 @@ public class NameBlock extends JavaPlugin implements Listener {
         saveDefaultConfig();
         loadConfigValues();
         Bukkit.getPluginManager().registerEvents(this, this);
-        getLogger().info("NameBlock Was Started!");
+        Bukkit.getConsoleSender().sendMessage(
+            Component.text("NameBlock Was Started!", NamedTextColor.GREEN)
+        );
     }
 
     private boolean checkBlocked(String playerName, List<String> patterns) {
