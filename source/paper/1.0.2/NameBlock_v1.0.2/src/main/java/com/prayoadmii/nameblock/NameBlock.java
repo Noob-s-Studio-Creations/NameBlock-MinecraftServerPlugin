@@ -1,5 +1,6 @@
 package com.prayoadmii.nameblock;
 
+// Imports :P
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
@@ -23,6 +24,7 @@ public class NameBlock extends JavaPlugin implements Listener {
     private boolean floodgateBypass;
     private Component kickComponent;
 
+    // When Plugin Was Enabled
     @Override
     public void onEnable() {
         saveDefaultConfig();
@@ -36,6 +38,7 @@ public class NameBlock extends JavaPlugin implements Listener {
         }
     }
 
+    // Check Did The Players Name Was Blocked?
     private boolean checkBlocked(String playerName, List<String> patterns) {
         for (String blocked : patterns) {
 
@@ -55,6 +58,7 @@ public class NameBlock extends JavaPlugin implements Listener {
         return false;
     }
 
+    // Loads All Configs
     private void loadConfigValues() {
         FileConfiguration config = getConfig();
 
@@ -71,6 +75,7 @@ public class NameBlock extends JavaPlugin implements Listener {
                 .deserialize(raw);
     }
 
+    // On Player Join :>
     @EventHandler
     public void onPreLogin(AsyncPlayerPreLoginEvent event) {
 
@@ -97,6 +102,7 @@ public class NameBlock extends JavaPlugin implements Listener {
         }
     }
 
+    // Floodgate Checks o_0
     private boolean isFloodgatePlayer(UUID uuid) {
         return Bukkit.getPluginManager().isPluginEnabled("Floodgate")
                 && uuid.toString().startsWith("00000000-0000-0000");
