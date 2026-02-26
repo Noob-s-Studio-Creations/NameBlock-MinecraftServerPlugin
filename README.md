@@ -1,10 +1,10 @@
 # **NameBlock – Minecraft Server Plugin**
 
-Welcome Back To My Cool Minecraft Plugin Called **"NameBlock"** 👋
+Hello And Welcome To Another Cool Minecraft Server Management Plugin Called **"NameBlock"**
 
----
+## **NOTE:** This Plugin Need [Floodgate](https://modrinth.com/mod/floodgate) For Some Features!
 
-## 🚫 What Does This Plugin Do?
+## What Is This Plugin Do?
 
 **NameBlock Allows You To Block Specific Parts Of Player Usernames.**
 
@@ -133,6 +133,6 @@ Works Great On:
 
 ## 🗓 Version
 
-**V1.0**
+**V1.0.2**
 
-Last Updated: 16/02/2026 | © Noob's Studio Creations
+Last Updated: 26/02/2026 | © Noob's Studio Creations!
