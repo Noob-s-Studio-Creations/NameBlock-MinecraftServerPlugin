@@ -1,0 +1,20 @@
+# NAMEBLOCK CONFIG VER 1.0
+# THIS PLUGIN IS SERVER-ONLY PLUGIN | DON'T TRY TO INSTALL TO CLIENT
+
+# Blocked Name: This Allow You To Add/Remove Patterns Of Blocked Name
+blocked-names:
+  - "ExampleNameThatIAddHereAndItsWasTooLongToBeAMinecraftNamePleaseReplaceMe"
+
+# BR Blocked Name: Will Apply Only to Bedrock Players If floodgate-bypass Was Enabled
+br-blocked-name:
+  - "ExampleNameThatIAddHereAndItsWasTooLongToBeAMinecraftNamePleaseReplaceMe"
+
+# Use Regex: This Allow You To Use Regex String Formatting If Set To True
+use-regex: true
+
+# Floodgate Bypass: If Set To True The blocked-name Will Not Apply To Users Join With Bedrock
+# FLOODGATE PLUGIN NEED TO BE INSTALLED BEFORE TURN THIS ON
+floodgate-bypass: false
+
+# Kick Message: What User Will See If They Got Kicked?
+kick-message: "&cYour Username Is Not Allowed On This Server!"
