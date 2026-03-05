@@ -1,11 +1,14 @@
-# NAMEBLOCK CONFIG VER 1.0
+# NAMEBLOCK CONFIG VER 1.0.3
 # THIS PLUGIN IS SERVER-ONLY PLUGIN | DON'T TRY TO INSTALL TO CLIENT
+
+# alert-update: Warn When Plugin Have An Update To Download
+alert-update: true
 
 # Blocked Name: This Allow You To Add/Remove Patterns Of Blocked Name
 blocked-names:
   - "ExampleNameThatIAddHereAndItsWasTooLongToBeAMinecraftNamePleaseReplaceMe"
 
-# BR Blocked Name: Will Apply Only to Bedrock Players If floodgate-bypass Was Enabled
+# BR Blocked Name: Will Apply Only To Bedrock Players If floodgate-bypass Was Enabled
 br-blocked-name:
   - "ExampleNameThatIAddHereAndItsWasTooLongToBeAMinecraftNamePleaseReplaceMe"
 
@@ -13,6 +16,7 @@ br-blocked-name:
 use-regex: true
 
 # Floodgate Bypass: If Set To True The blocked-name Will Not Apply To Users Join With Bedrock
+# If This Enabled - Will Use br-blocked-name To Block Bedrock Players Name
 # FLOODGATE PLUGIN NEED TO BE INSTALLED BEFORE TURN THIS ON
 floodgate-bypass: false
 

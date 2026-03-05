@@ -1,0 +1,15 @@
+name: NameBlock
+version: 1.0.3
+softdepend: [Floodgate]
+main: com.prayoadmii.nameblock.NameBlock
+api-version: 1.21
+author: Noob's Studio Creations! - PrayoadMii
+description: Block Specific Parts Of Player Usernames With Regex + Floodgate Support
+commands:
+  nameblock:
+    description: Main Command For NameBlock
+    usage: /nameblock <reload|updates>
+    permission: nameblock.admin
+permissions:
+  nameblock.admin:
+    default: op
